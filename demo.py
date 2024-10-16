@@ -5,7 +5,9 @@ import os
 import langcodes
 import cohere
 from langchain_core.messages import AIMessage, HumanMessage
-from secrets.toml import * 
+
+co = st.secrets["cohere_apikey"]
+
 
 co = cohere.Client(cohere_apikey)
 
