@@ -6,10 +6,10 @@ import langcodes
 import cohere
 from langchain_core.messages import AIMessage, HumanMessage
 
-co = st.secrets["cohere_apikey"]
 
 
-co = cohere.Client(cohere_apikey)
+
+co = "fA27Eq8tBBJ6JqdI4wT1jYitJneVYylSrQiVzVBB"
 
 llm = Cohere(model='summarize-xlarge', temperature=0.1, max_tokens=1000)
 
