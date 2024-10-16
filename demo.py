@@ -7,11 +7,6 @@ import cohere
 from langchain_core.messages import AIMessage, HumanMessage
 
 
-co = cohere.Client('fA27Eq8tBBJ6JqdI4wT1jYitJneVYylSrQiVzVBB')
-
-
-os.environ["COHERE_API_KEY"] = 'fA27Eq8tBBJ6JqdI4wT1jYitJneVYylSrQiVzVBB'
-
 llm = Cohere(model='summarize-xlarge', temperature=0.1, max_tokens=1000)
 
 def find_language(text, target_lang):
