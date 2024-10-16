@@ -5,7 +5,9 @@ import os
 import langcodes
 import cohere
 from langchain_core.messages import AIMessage, HumanMessage
+from secrets.toml import * 
 
+co = cohere.Client(cohere_apikey)
 
 llm = Cohere(model='summarize-xlarge', temperature=0.1, max_tokens=1000)
 
