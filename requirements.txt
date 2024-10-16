@@ -1,4 +1,5 @@
 langdetect  
 langchain
-
-
+streamlit
+langcodes
+cohere
